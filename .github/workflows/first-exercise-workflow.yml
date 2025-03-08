@@ -1,22 +1,11 @@
 name: Workflow exercise1
-on: [push]
+on: [push, pull_requset]
 
 jobs:
-  testing-wf-commands:
+  chekc-python:
     runs-on: ubuntu-latest
     steps:
-      - name: python
-        run: |
-          python —version
-          pip —version
-
-on: [pull]
-
-jobs:
-  testing-wf-commands:
-    runs-on: ubuntu-latest
-    steps:
-      - name: python
+      - name: 1. Check python & pip version 
         run: |
           python —version
           pip —version
