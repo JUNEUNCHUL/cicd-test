@@ -1,0 +1,22 @@
+name: Workflow exercise1
+on: [push]
+
+jobs:
+  testing-wf-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: python
+        run: |
+          python —version
+          pip —version
+
+]on: [pull]
+
+jobs:
+  testing-wf-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: python
+        run: |
+          python —version
+          pip —version
