@@ -1,5 +1,5 @@
 name: Workflow exercise1
-on: [push, pull_requset]
+on: [push, pull_request]
 
 jobs:
   chekc-python:
