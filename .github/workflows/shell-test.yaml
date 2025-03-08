@@ -1,0 +1,22 @@
+name: Change Working Dir & Shell
+on: [push]
+defaults:  # Workflow Level defaults
+  run:
+    shell: bash
+jobs:
+  bash-test:
+    runs-on: windows-latest
+    steps:
+      - name: bash 시험
+        shell: bash
+        run: uname -a
+      - name: pwsh 시험
+        shell: pwsh
+        run: Get-ComputerInfo
+      - name: python 시험
+        shell: python
+        run: sys.version
+      - name: node 시험
+        shell: node
+        run: process.version
+
