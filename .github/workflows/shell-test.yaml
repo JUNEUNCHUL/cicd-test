@@ -20,5 +20,5 @@ jobs:
           print(sys.version)
       - name: node 시험
         shell: node
-        run: process.version
+        run: console.log(process.version)
 
