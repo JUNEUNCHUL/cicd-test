@@ -10,7 +10,7 @@ jobs:
           python —version
           pip —version
 
-]on: [pull]
+on: [pull]
 
 jobs:
   testing-wf-commands:
