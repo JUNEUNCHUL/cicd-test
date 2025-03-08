@@ -15,7 +15,9 @@ jobs:
         run: Get-ComputerInfo
       - name: python 시험
         shell: python
-        run: sys.version
+        run: |
+          import sys 
+          print(sys.version)
       - name: node 시험
         shell: node
         run: process.version
