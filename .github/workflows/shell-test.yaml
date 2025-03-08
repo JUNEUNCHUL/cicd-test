@@ -19,6 +19,6 @@ jobs:
           import sys 
           print(sys.version)
       - name: node 시험
-        shell: node
+        shell: node {0}
         run: console.log(process.version)
 
